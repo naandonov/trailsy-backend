@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/nikolay.andonov/Documents/Projects/Vapor/Trailsy Backend/Trailsy/.build/checkouts/crypto/Sources/CCryptoOpenSSL/include"
+    export *
+}

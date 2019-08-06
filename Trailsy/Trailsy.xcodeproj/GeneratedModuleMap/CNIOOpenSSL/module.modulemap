@@ -1,0 +1,4 @@
+module CNIOOpenSSL {
+    umbrella "/Users/nikolay.andonov/Documents/Projects/Vapor/Trailsy Backend/Trailsy/.build/checkouts/swift-nio-ssl/Sources/CNIOOpenSSL/include"
+    export *
+}
