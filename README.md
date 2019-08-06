@@ -1,1 +1,1 @@
-# trailsy-backend
+# Trailsy backend
