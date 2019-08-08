@@ -22,6 +22,21 @@ final class Token: Content {
     }
 }
 
+//MARK: - PublicMappabble
+
+extension Token: PublicMappable {
+    
+    struct Public: Content {
+        var accessToken: String
+    }
+    
+    typealias PublicElement = ResultWrapper<Token.Public>
+
+    func mapToPublic() -> PublicElement {
+        return Token.Public(accessToken: token).parse()
+    }
+}
+
 //MARK: - Utilities
 
 extension Token {

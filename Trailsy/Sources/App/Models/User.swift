@@ -14,14 +14,14 @@ final class User: Content {
     
     var id: User.ID?
     
-    let name: String
-    let username: String
-    let password: String
+    var name: String
+    var email: String
+    var password: String
     
-    init(name: String, username: String, password: String) {
+    init(name: String, email: String, password: String) {
         self.name = name
-        self.username = username
         self.password = password
+        self.email = email
     }
 }
 
@@ -29,18 +29,46 @@ final class User: Content {
 
 extension User: PublicMappable {
     
-    final class Public: Content {
+    struct Public: Content {
         let name: String
+        let email: String
         
-        init(name: String) {
+        init(name: String, email: String) {
             self.name = name
+            self.email = email
         }
     }
     
     typealias PublicElement = User.Public
     
     func mapToPublic() -> PublicElement {
-        return User.Public(name: name)
+        return User.Public(name: name,
+                           email: email)
+    }
+}
+
+//MARK: - Supplementary Models
+
+extension User {
+    
+    struct RegisterRequest: Content {
+        let name: String
+        let email: String
+        let password: String
+    }
+    
+    struct LoginRequest: Content {
+        let email: String
+        let password: String
+    }
+}
+
+//MARK: - Relationships
+
+extension User {
+    
+    var userDevice: Children<User, Device> {
+        return children(\.userId)
     }
 }
 
@@ -69,11 +97,24 @@ extension User: Migration {
     static func prepare(on connection: PostgreSQLConnection) -> Future<Void> {
         return Database.create(self, on: connection, closure: { builder in
             try addProperties(to: builder)
-            builder.unique(on: \.username)
+            builder.unique(on: \.email)
         })
     }
     
 }
+
+//MARK: - PasswordAuthenticatable
+
+extension User: PasswordAuthenticatable {
+    static var usernameKey: WritableKeyPath<User, String> {
+        return \User.email
+    }
+    static var passwordKey: WritableKeyPath<User, String> {
+        return \User.password
+    }
+}
+
+//MARK: - AdminUser
 
 struct AdminUser: Migration {
     typealias Database = PostgreSQLDatabase
@@ -84,7 +125,7 @@ struct AdminUser: Migration {
             fatalError("Failed to create admin user")
         }
         let user = User(name: "Admin",
-                        username: "admin",
+                        email: "admin@trailsy.io",
                         password: hashedPassword)
         return user.save(on: connection).transform(to: Void())
     }

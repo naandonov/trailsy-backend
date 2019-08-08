@@ -39,6 +39,13 @@
 		4E7A760E22FB0AAB004B3D8A /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A760D22FB0AAB004B3D8A /* UserController.swift */; };
 		4E7A761022FB0B40004B3D8A /* Router+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A760F22FB0B40004B3D8A /* Router+Utilities.swift */; };
 		4E7A761322FB0F59004B3D8A /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A761222FB0F59004B3D8A /* UserServices.swift */; };
+		4E7A761522FB1FE3004B3D8A /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A761422FB1FE3004B3D8A /* Device.swift */; };
+		4E7A761822FC531A004B3D8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A761722FC531A004B3D8A /* Constants.swift */; };
+		4E7A761D22FC54CC004B3D8A /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A761C22FC54CC004B3D8A /* AuthenticationController.swift */; };
+		4E7A761F22FC54D8004B3D8A /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A761E22FC54D8004B3D8A /* AuthenticationServices.swift */; };
+		4E7A762122FC95B9004B3D8A /* CommonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A762022FC95B9004B3D8A /* CommonModels.swift */; };
+		4E7A762422FC9E23004B3D8A /* Array+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A762222FC9E23004B3D8A /* Array+Utilities.swift */; };
+		4E7A762522FC9E23004B3D8A /* Content+Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A762322FC9E23004B3D8A /* Content+Utilites.swift */; };
 		OBJ_1069 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AppTests.swift */; };
 		OBJ_1071 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Trailsy::App::Product" /* App.framework */; };
 		OBJ_1072 /* Vapor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Vapor::Vapor::Product" /* Vapor.framework */; };
@@ -1212,8 +1219,6 @@
 		OBJ_3068 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_318 /* Package.swift */; };
 		OBJ_3074 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_496 /* Package.swift */; };
 		OBJ_3080 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_870 /* Package.swift */; };
-		OBJ_928 /* TodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* TodoController.swift */; };
-		OBJ_929 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Todo.swift */; };
 		OBJ_930 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* app.swift */; };
 		OBJ_931 /* boot.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* boot.swift */; };
 		OBJ_932 /* configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* configure.swift */; };
@@ -5096,6 +5101,13 @@
 		4E7A760D22FB0AAB004B3D8A /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		4E7A760F22FB0B40004B3D8A /* Router+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Utilities.swift"; sourceTree = "<group>"; };
 		4E7A761222FB0F59004B3D8A /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		4E7A761422FB1FE3004B3D8A /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4E7A761722FC531A004B3D8A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E7A761C22FC54CC004B3D8A /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		4E7A761E22FC54D8004B3D8A /* AuthenticationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServices.swift; sourceTree = "<group>"; };
+		4E7A762022FC95B9004B3D8A /* CommonModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModels.swift; sourceTree = "<group>"; };
+		4E7A762222FC9E23004B3D8A /* Array+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Utilities.swift"; sourceTree = "<group>"; };
+		4E7A762322FC9E23004B3D8A /* Content+Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Content+Utilites.swift"; sourceTree = "<group>"; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5115,7 +5127,6 @@
 		"FluentSQLite::FluentSQLite::Product" /* FluentSQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FluentSQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTP::HTTP::Product" /* HTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Multipart::Multipart::Product" /* Multipart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Multipart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* TodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoController.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Pivot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
 		OBJ_101 /* SoftDeletable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftDeletable.swift; sourceTree = "<group>"; };
 		OBJ_103 /* FluentProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluentProperty.swift; sourceTree = "<group>"; };
@@ -5133,7 +5144,6 @@
 		OBJ_117 /* Children.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Children.swift; sourceTree = "<group>"; };
 		OBJ_118 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		OBJ_119 /* Siblings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siblings.swift; sourceTree = "<group>"; };
-		OBJ_12 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		OBJ_121 /* DatabasesConfig+References.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabasesConfig+References.swift"; sourceTree = "<group>"; };
 		OBJ_122 /* SchemaBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaBuilder.swift; sourceTree = "<group>"; };
 		OBJ_123 /* SchemaCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaCreator.swift; sourceTree = "<group>"; };
@@ -6722,6 +6732,26 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		4E7A761622FC5310004B3D8A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A762222FC9E23004B3D8A /* Array+Utilities.swift */,
+				4E7A762322FC9E23004B3D8A /* Content+Utilites.swift */,
+				4E7A762022FC95B9004B3D8A /* CommonModels.swift */,
+				4E7A761722FC531A004B3D8A /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4E7A761B22FC54B4004B3D8A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A761C22FC54CC004B3D8A /* AuthenticationController.swift */,
+				4E7A761E22FC54D8004B3D8A /* AuthenticationServices.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		OBJ_102 /* Query */ = {
 			isa = PBXGroup;
 			children = (
@@ -6751,9 +6781,9 @@
 		OBJ_11 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* Todo.swift */,
 				4E7A760422F9EEAD004B3D8A /* User.swift */,
 				4E7A760B22FAFECD004B3D8A /* Token.swift */,
+				4E7A761422FB1FE3004B3D8A /* Device.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -8729,6 +8759,7 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4E7A761622FC5310004B3D8A /* Utilities */,
 				4E7A760622F9F139004B3D8A /* Extensions */,
 				OBJ_9 /* Controllers */,
 				OBJ_11 /* Models */,
@@ -8966,8 +8997,8 @@
 		OBJ_9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4E7A761B22FC54B4004B3D8A /* Authentication */,
 				4E7A761122FB0F33004B3D8A /* User */,
-				OBJ_10 /* TodoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -11826,16 +11857,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				4E7A762522FC9E23004B3D8A /* Content+Utilites.swift in Sources */,
 				4E7A760A22F9F555004B3D8A /* Future+PulicMapper.swift in Sources */,
 				4E7A760C22FAFECD004B3D8A /* Token.swift in Sources */,
-				OBJ_928 /* TodoController.swift in Sources */,
 				4E7A760E22FB0AAB004B3D8A /* UserController.swift in Sources */,
-				OBJ_929 /* Todo.swift in Sources */,
+				4E7A761522FB1FE3004B3D8A /* Device.swift in Sources */,
 				4E7A761022FB0B40004B3D8A /* Router+Utilities.swift in Sources */,
 				4E7A760822F9F14C004B3D8A /* Environment+Utilities.swift in Sources */,
 				OBJ_930 /* app.swift in Sources */,
+				4E7A761D22FC54CC004B3D8A /* AuthenticationController.swift in Sources */,
 				4E7A761322FB0F59004B3D8A /* UserServices.swift in Sources */,
+				4E7A761822FC531A004B3D8A /* Constants.swift in Sources */,
+				4E7A762122FC95B9004B3D8A /* CommonModels.swift in Sources */,
+				4E7A761F22FC54D8004B3D8A /* AuthenticationServices.swift in Sources */,
 				OBJ_931 /* boot.swift in Sources */,
+				4E7A762422FC9E23004B3D8A /* Array+Utilities.swift in Sources */,
 				OBJ_932 /* configure.swift in Sources */,
 				OBJ_933 /* routes.swift in Sources */,
 				4E7A760522F9EEAD004B3D8A /* User.swift in Sources */,
